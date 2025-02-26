@@ -28,6 +28,20 @@ const teams = [
         designation: 'CMO & Strategic Lead',
         details: 'Graduate of Xi\'an Jiaotong University. 10 years of financial industry experience. Co-founded AidePros Service Inc. Expert in project investment and management.',
         image: '/img/ct4.png'
+    },
+    {
+        id: 5,
+        name: 'Xin Chen',
+        designation: 'Co-Founder',
+        details: 'Mr. Chen worked at Huawei for 16 years, serving as international sales, account manager, and procurement manager, with extensive supply chain experience.',
+        image: '/img/ct5 xc.png'
+    },
+    {
+        id: 6,
+        name: 'Kai Zhu',
+        designation: 'Co-Founder',
+        details: 'Mr. Zhu holds degrees in Engineering and MBA, with 10 years as general manager of a technology trade company and also 9 years as a technical engineer.',
+        image: '/img/ct6 zk.png'
     }
 ];
 
@@ -43,29 +57,31 @@ export default function Team6() {
                 </div>
             </div>
 
-            <div className="row grid-view gx-md-8 gx-xl-10 gy-8 gy-lg-0 mb-md-20">
-                {teams.map((item) => (
-                    <div className="col-md-6 col-lg-3" key={item.id}>
-                        <div className="position-relative">
-                            <div
-                                className="shape rounded bg-soft-primary rellax d-md-block"
-                                style={{zIndex: 0, width: "98%", height: "98%", right: "-0.75rem", bottom: "-0.75rem"}}
-                            />
+            <div className="container">
+                <div className="row justify-content-center">
+                    {teams.map((item) => (
+                        <div className="col-md-6 col-lg-4 mb-8" key={item.id}>
+                            <div className="position-relative">
+                                <div
+                                    className="shape rounded bg-soft-primary rellax d-md-block"
+                                    style={{zIndex: 0, width: "98%", height: "98%", right: "-0.75rem", bottom: "-0.75rem"}}
+                                />
 
-                            <div className="card shadow-lg">
-                                <figure className="card-img-top text-center">
-                                    <img className="" style={{ width: "70%", height: "auto" }} src={item.image} alt=""/>
-                                </figure>
+                                <div className="card shadow-lg">
+                                    <figure className="card-img-top text-center">
+                                        <img className="" style={{ width: "70%", height: "auto" }} src={item.image} alt={item.name}/>
+                                    </figure>
 
-                                <div className="card-body px-6 py-5">
-                                    <h4 className="mb-1">{item.name}</h4>
-                                    <p className="mb-2">{item.designation}</p>
-                                    <p className="mb-0 fs-sm text-black">{item.details}</p>
+                                    <div className="card-body px-6 py-5">
+                                        <h4 className="mb-1">{item.name}</h4>
+                                        <p className="mb-2">{item.designation}</p>
+                                        <p className="mb-0 fs-sm text-black">{item.details}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </Fragment>
     );
