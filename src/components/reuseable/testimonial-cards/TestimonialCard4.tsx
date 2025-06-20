@@ -36,7 +36,7 @@ export default function TestimonialCard4({
                             <Carousel grabCursor slidesPerView={1} navigation={false}>
                                 {testimonialList2.map((item, i) => (
 
-                                    <div className="text-center">
+                                    <div className="text-center" key={i}>
                                         <div className="blockquote-details justify-content-center text-center pb-4">
                                             <div className="info ps-0">
                                                 <h5 className="mb-1">{item.title}</h5>

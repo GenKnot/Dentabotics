@@ -49,7 +49,7 @@ export default function Footer10() {
               <div className="widget">
                 <h4 className="widget-title text-white mb-3">Contact</h4>
                 <p className="mb-2">Montreal, Canada</p>
-                <a href="mailto:info@dentabotics.com" className="text-white">info@dentabotics.com</a>
+                <a href="mailto:info@denta-botics.com" className="text-white">info@denta-botics.com</a>
               </div>
             </div>
           </div>
